@@ -1,0 +1,6 @@
+services:
+  netvisionai:
+    image: netvisionai
+    build:
+      context: .
+      dockerfile: ./Dockerfile

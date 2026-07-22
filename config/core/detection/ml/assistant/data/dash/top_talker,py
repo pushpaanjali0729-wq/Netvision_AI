@@ -1,0 +1,37 @@
+# dashboard/top_talkers.py
+
+import streamlit as st
+import pandas as pd
+
+
+def show_top_talkers(df):
+
+    st.subheader(
+        "🌐 Top Talkers"
+    )
+
+    if "src_ip" not in df.columns:
+        return
+
+    top = (
+
+        df["src_ip"]
+
+        .value_counts()
+
+        .head(10)
+
+        .reset_index()
+    )
+
+    top.columns = [
+
+        "IP Address",
+
+        "Packets"
+    ]
+
+    st.dataframe(
+        top,
+        use_container_width=True
+    )

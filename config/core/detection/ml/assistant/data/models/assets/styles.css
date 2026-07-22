@@ -1,0 +1,174 @@
+/* ======================================
+   NetVision AI - Professional SOC Theme
+====================================== */
+
+/* Main App */
+.stApp {
+    background-color: #0E1117;
+    color: #FFFFFF;
+}
+
+/* Hide Streamlit Branding */
+#MainMenu {
+    visibility: hidden;
+}
+
+footer {
+    visibility: hidden;
+}
+
+header {
+    visibility: hidden;
+}
+
+/* Title */
+h1 {
+    color: #00E5FF !important;
+    text-align: center;
+    font-weight: bold;
+}
+
+h2, h3 {
+    color: #00E5FF !important;
+}
+
+/* Sidebar */
+section[data-testid="stSidebar"] {
+    background-color: #161B22;
+    border-right: 1px solid #30363D;
+}
+
+/* Cards */
+.metric-card {
+    background-color: #161B22;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #30363D;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.4);
+}
+
+/* Streamlit Metrics */
+[data-testid="metric-container"] {
+    background-color: #161B22;
+    border: 1px solid #30363D;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.4);
+}
+
+/* Tables */
+[data-testid="stDataFrame"] {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Buttons */
+.stButton > button {
+    width: 100%;
+    border-radius: 10px;
+    background-color: #00E5FF;
+    color: black;
+    font-weight: bold;
+    border: none;
+}
+
+.stButton > button:hover {
+    background-color: #00B8D4;
+    color: white;
+}
+
+/* Success Alert */
+.stSuccess {
+    background-color: rgba(0,255,127,0.15);
+    border-left: 5px solid #00FF7F;
+}
+
+/* Warning Alert */
+.stWarning {
+    background-color: rgba(255,193,7,0.15);
+    border-left: 5px solid #FFC107;
+}
+
+/* Error Alert */
+.stError {
+    background-color: rgba(255,0,0,0.15);
+    border-left: 5px solid #FF4B4B;
+}
+
+/* KPI Glow Effect */
+.kpi-box {
+    background: linear-gradient(
+        135deg,
+        #161B22,
+        #1F2937
+    );
+
+    border: 1px solid #00E5FF;
+
+    border-radius: 15px;
+
+    padding: 20px;
+
+    text-align: center;
+
+    box-shadow:
+        0 0 10px rgba(0,229,255,0.3);
+}
+
+/* Threat Center */
+.threat-card {
+    background-color: #2B0F0F;
+    border-left: 5px solid red;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+/* Network Health */
+.health-good {
+    color: #00FF7F;
+    font-weight: bold;
+}
+
+.health-warning {
+    color: #FFC107;
+    font-weight: bold;
+}
+
+.health-critical {
+    color: #FF4B4B;
+    font-weight: bold;
+}
+
+/* Tabs */
+.stTabs [role="tab"] {
+    background-color: #161B22;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+.stTabs [aria-selected="true"] {
+    background-color: #00E5FF;
+    color: black;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #161B22;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #00E5FF;
+    border-radius: 10px;
+}
+
+/* Footer Section */
+.footer {
+    text-align: center;
+    color: gray;
+    padding-top: 20px;
+}
